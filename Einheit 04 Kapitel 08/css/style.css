@@ -1,0 +1,196 @@
+:root {
+    box-sizing: border-box;
+    --light: rgb(250, 255, 250);
+    --light2: rgba(240, 255, 240, 1);
+    --med: rgb(21, 126, 126);
+    --dark: rgb(66, 66, 66);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;900&display=swap');
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: auto 0;
+    font-family: 'Raleway', sans-serif;
+    color: var(--dark);
+    background-color: var(--light);
+    text-align: center;
+}
+
+h1,
+caption {
+    font-family: 'La Belle Aurore', cursive;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2em;
+}
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/*TABLE*/
+
+table {
+    border: 1px solid var(--dark);
+    border-collapse: collapse;
+    background-color: var(--light);
+}
+
+td,
+th {
+    border-bottom: 1px solid var(--dark);
+    padding: 0.5rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--light2);
+}
+
+
+/*KONTAKT*/
+
+main {
+    display: block;
+    margin: 0 20%;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit],
+input[type=reset] {
+    width: 100%;
+    background-color: var(--dark);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: var(--med);
+}
+
+.kontakt {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input[type=radio] {
+    display: flex;
+}
+
+input[type=time],
+input[type=date] {
+    font-family: 'Raleway', sans-serif;
+    color: var(--dark);
+}
+
+.radiobtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.radiobtn label {
+    width: 60px;
+}
+
+input:focus,
+textarea:focus,
+option:focus,
+{
+    outline: solid 1px var(--med);
+    box-shadow: 0 0 5px var(--med);
+    background-color: rgba(21, 126, 126, 0.1);
+}
+
+.validity input:valid {
+    border: solid 1px greenyellow;
+}
+
+.validity input:invalid {
+    border: solid 1px red;
+}
+
+.field textarea {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    /*Tabelle*/
+    table,
+    tr,
+    td {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    th,
+    thead {
+        display: none;
+    }
+    td:nth-child(0)::before {
+        content: "Tier: "
+    }
+    td:nth-child(1)::before {
+        content: "Vegetarier: "
+    }
+    td:nth-child(2)::before {
+        content: "Gattung: "
+    }
+    td:nth-child(3)::before {
+        content: "Lebensraum: "
+    }
+    td:nth-child(4)::before {
+        content: "Patenschaft: "
+    }
+    td:nth-child(5)::before {
+        content: "Name: "
+    }
+    td:nth-child(6)::before {
+        content: "Lieblingsspeise: "
+    }
+    table {
+        border: none;
+    }
+    tbody {
+        border: 1px solid var(--dark);
+        margin: auto;
+        display: block;
+    }
+    caption {
+        width: 100%;
+    }
+}

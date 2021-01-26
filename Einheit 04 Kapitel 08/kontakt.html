@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Zoo Kontaktformular</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"></a>Willkommen</li>
+            <li>
+                <a href="info.html"></a>Info</li>
+            <li>
+                <a href="kontakt.html"></a>Kontakt</li>
+        </ul>
+    </nav>
+
+    <header>
+
+    </header>
+
+    <main>
+        <h1>Kontaktiere uns!</h1>
+        <form class="kontakt" method="get" action="">
+            <div class="field">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Vorname und Nachname">
+                </label>
+            </div>
+
+            <br><br>
+            <div class="field">
+                <label for="email">Email:
+                <input type="email" name="email" id="email" placeholder="deineemail@gmail.com">
+            </label>
+            </div>
+
+
+            <br><br>
+            <div class="field">
+                <label for="plz">Postleitzahl:
+                <input type="text" name="plz" id="plz" placeholder="1010">
+            </label>
+            </div>
+
+            <br><br>
+            <div class="field">
+                <label for="datum">Besuchstag:
+                <input type="date" name="datum" id="datum">
+            </label>
+            </div>
+            <br><br>
+
+            <div class="field">
+                <label for="zeit">Besuchszeit:
+                <input type="time" name="zeit" id="zeit">
+            </label>
+            </div>
+            <br><br>
+
+            <div class="field">
+                <label for="like">Hat es Dir gefallen? gar nicht > super<br>
+                <input type="range" name="like" id="like" step="1" min="1" max="5">
+            </label>
+            </div>
+            <br>
+
+            <fieldset>
+                <legend>Empfiehlst Du uns weiter?</legend>
+                <div class="radiobtn">
+                    <label for="ja">
+                        <input type="radio" name="ja" id="ja" value="ja">
+                    <span></span>
+                        Ja</label>
+                    <label for="nein">
+                        <input type="radio" name="nein" id="nein" value="nein">
+                    <span></span>
+                        Nein</label>
+                </div>
+            </fieldset>
+
+            <br>
+            <div class="field">
+                <label for="tier">Lieblingstier?
+                <input type="text" list="tier">
+                <datalist name="tier" id="tier">
+                  <option value="loewe">Löwe</option>
+                  <option value="antilope">Antilope</option>
+                  <option value="jaguar">Jaguar</option>
+                  <option value="paradiesvogel">Paradiesvogel</option>
+                </datalist>
+                </label>
+            </div>
+
+            <br><br>
+            <div class="field">
+                <label for="feedback">Kommentar:
+                <textarea name="" id="" cols="43" rows="10"></textarea>
+                </label>
+            </div>
+
+            <br><br>
+            <div class="field">
+                <label for="info">Besucherinfo:
+                    <select name="info" id="info">
+                        <option value="familie">Familienausflug</option>
+                        <option value="allein">Allein unterwegs</option>
+                        <option value="gruppe">Gruppenausflug</option>
+                        <option value="freunde">Ausflug mit Freunden</option>
+                        <option value="sonstiges">Sonstiges</option>
+                    </select>
+                </label>
+            </div>
+
+            <br><br>
+
+            <div class="send">
+                <input type="submit" value="Absenden" class="button"><br><br>
+                <input type="reset" value="Reset" class="button">
+            </div>
+        </form>
+
+
+    </main>
+
+</body>
+
+</html>
