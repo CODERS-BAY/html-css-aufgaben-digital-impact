@@ -1,0 +1,39 @@
+/* font-family: 'Font Awesome 5 Free';
+font-weight: 900;
+
+font-family: 'Font Awesome 5 Brands';
+font-weight: 400; */
+
+:root {
+    box-sizing: border-box;
+    --bg: hsl(206, 41%, 88%);
+    --tp: hsla(180, 71%, 29%, 0.5);
+    --hl: hsl(180, 71%, 25%);
+    --tx: hsl(180, 71%, 10%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: var(--tx);
+    margin: 0 auto;
+    padding: 0;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
